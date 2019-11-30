@@ -19,20 +19,6 @@ const bceventSchema = mongoose.Schema({
     },
     description: String,
     attendees:[String],
-    messages:[{
-        user: {
-            type: String, //email of message author
-            required: true
-        },
-        timestamp: {
-            type: Date,
-            default: Date.now
-        },
-        text: {
-            type: String,
-            required: true
-        }
-    }],
 });
 
 module.exports = bcevent = mongoose.model('BCEvent', bceventSchema);

@@ -10,6 +10,7 @@ const Question = require('./models/question');
 const Speaker = require('./models/speaker');
 const Talk = require('./models/talk');
 const BCEvent = require('./models/bird-chat-event');
+const BCMessage = require('./models/bird-chat-event-message');
 
 
 AdminBro.registerAdapter(AdminBroMongoose)
@@ -55,6 +56,9 @@ const adminBro = new AdminBro({
     },
     {
       resource: BCEvent
+    },
+    {
+      resource: BCMessage
     }
   ],
   branding: {
