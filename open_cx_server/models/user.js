@@ -22,6 +22,9 @@ const userSchema = mongoose.Schema({
     max: 90
   },
   description: String,
+  affiliation: String,
+  website: String,
+  pictureURL: String,
   tags: [String],
   conferences: [String],
   points: {
